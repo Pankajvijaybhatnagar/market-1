@@ -106,9 +106,11 @@ const OptionChainTable = ({ loading, optionChain }) => {
                                     }}
                                 >
                                     <td>{ceOI}</td>
-                                    <td>{row.CE?.lastPrice ?? "-"}</td>
                                     <td>{row.CE?.changeinOpenInterest ?? "-"}</td>
+                                    <td>{row.CE?.lastPrice ?? "-"}</td>
+                                
                                     <td>{row.CE?.totalTradedVolume ?? "-"}</td>
+                                    
 
                                     <td>
                                         {strike}
