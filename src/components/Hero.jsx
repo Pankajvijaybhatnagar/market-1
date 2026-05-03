@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import OptionChainService from "../services/optionchainServices";
-import OptionChainFilters from "../components/OptionChainFilters";
-import OptionChainTable from "../components/OptionChainTable";
+import OptionChainFilters from "./OptionChainFilters";
+import OptionChainTable from "./OptionChainTable";
 
 const Hero = () => {
     const [filters, setFilters] = useState({
