@@ -1,6 +1,10 @@
 class OptionChainService {
     constructor() {
-        this.baseUrl = "/api/option-chain-v3";
+        const isProduction = window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1';
+        const apiBase = isProduction 
+            ? 'https://www.nseindia.com/api/option-chain-v3'
+            : '/api/option-chain-v3';
+        this.baseUrl = apiBase;
     }
 
     /**
