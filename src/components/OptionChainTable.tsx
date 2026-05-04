@@ -15,7 +15,7 @@ const OptionChainTable: React.FC<Props> = ({
     const [liveData, setLiveData] = useState<OptionChainRow[]>([]);
     const [lastUpdated, setLastUpdated] = useState<Date>(new Date());
 
-    const pollingRef = useRef<NodeJS.Timeout | null>(null);
+    const pollingRef = useRef<number | null>(null);
     const fetchingRef = useRef(false);
 
     const loadData = async () => {
